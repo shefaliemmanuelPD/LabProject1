@@ -3,9 +3,35 @@
 <head>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
     <script src="script.js"></script>
-
 </head>
 <style>
+    body {margin:0;}
+
+    .topnav {
+      overflow: hidden;
+      background-color: #a3a3a3;
+    }
+
+    .topnav a {
+      float: left;
+      display: block;
+      color: #ffc0cb;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+      font-family: "verdana"
+    }
+
+    .topnav a:hover {
+      background-color: #333;
+      color: black;
+    }
+
+    .topnav a.active {
+        background-color: #cecece;
+        color: white;
+    }
     a:link {
         color: purple;
         background-color: transparent;
@@ -30,35 +56,63 @@
         text-decoration: underline;
     }
     body{
-    background-color: black;
-    text-align:center}
+    background-image: url("YESSSS.jpg");
+    background-size: 100%;
+    height: 150px;
+    text-align:left}
+
+
+
 </style>
 <body ng-controller="myController">
 
-    <div>
-        <font face= "verdana" size="7"><p><a href="http://compsci.cofc.edu/current-student/Undergraduate%20Research/index.php"\>College of Charleston's Computer Science Undergraduate Research Labs</a></p></font>
-       <font face= "verdana" size="5"><p><a href="http://cirdles.org/">Cyber Infrastructure Research and Development Lab for the Earth Sciences</a></p>
-           <font face= "verdana" size="5"><p><a href="http://www.cs.cofc.edu/~manaris/?n=Main.ResearchProjects">Computer Music and Arts Lab</a></p></font>
-        <font face= "verdana" size="5"><p><a href="http://blogs.cofc.edu/mountrouidoux/cybersecurity-x-lab/">Cybersecurity X Lab</a></p></font>
-       <font face= "verdana" size="5"><p><a href="https://anderson-lab.github.io/">Data Science Research Lab</a></p></font>
-        <font face= "verdana" size="5"><p><a href="http://munsellb.people.cofc.edu/home.html">Machine Learning and Medical Image Analysis Lab</a></p></font>
-        <font face= "verdana" size="5"><p><a href="http://omics.cofc.edu/">Omics Data Science Experience</a></p></font>
-        <font face= "verdana" size="5"><p><a href="http://blogs.cofc.edu/sebastian/uav-robotics-lab/">UAV Robotics Lab</a></p></font>
-        <font face= "verdana" size="5"><p><a href="https://blogs.cofc.edu/olmsteda/de/seta-lab-awarded-grant-to-research-and-develop-cloud-software/">SDE Cyber-Security Lab</a></p></font>
-        <font face= "verdana" size="5"><p><a href="http://blogs.cofc.edu/bareswh/virtual-production-lab/">Virtual Production Lab</a></p></font>
+<div>
 
-<!--        <p>
-            Department: {{labInfo.department}}
-        </p>
-        <p>
-            Faculty Member: {{labInfo.facultyMember}}
-        </p>
-        <p>
-        Lab Title: {{labInfo.labTitle}}
-        </p>
-        <p>
-            Description: {{labInfo.description}}
-        </p> -->
+
+    <!--        <p>
+                Department: {{labInfo.department}}
+            </p>
+            <p>
+                Faculty Member: {{labInfo.facultyMember}}
+            </p>
+            <p>
+            Lab Title: {{labInfo.labTitle}}
+            </p>
+            <p>
+                Description: {{labInfo.description}}
+            </p> -->
+    <div class="topnav">
+        <a href="http://localhost:63342/LabProject1/index.html?_ijt=2j5m7kr0f3d7m1o2pqtlpgboac">Home</a>
+        <a href="http://localhost:63342/LabProject1/form.html?_ijt=2j5m7kr0f3d7m1o2pqtlpgboac">Form</a>
+        <a href="http://localhost:63342/LabProject1/advancedSearch.html?_ijt=8uidk4hqb376vj4bf6r6r21gsp">Advanced Search</a>
+        <a href="http://localhost:63342/LabProject1/about.html?_ijt=8uidk4hqb376vj4bf6r6r21gsp">About</a>
     </div>
-</body ng-controller="myController">
+
+    <div style="padding-left:16px">
+        <h2><font face="verdana" size="7"><p><a
+                href="http://compsci.cofc.edu/current-student/Undergraduate%20Research/index.php" target="_blank">College
+            of Charleston's Computer Science Undergraduate Research Labs</a></p></font></h2>
+        <p><font face="verdana" size="5">
+        <p><a href="http://cirdles.org/" target="_blank">Cyber Infrastructure Research and Development Lab for the Earth
+            Sciences</a></p>
+        <font face="verdana" size="5"><p><a href="http://www.cs.cofc.edu/~manaris/?n=Main.ResearchProjects"
+                                            target="_blank">Computer Music and Arts Lab</a></p></font>
+        <font face="verdana" size="5"><p><a href="http://blogs.cofc.edu/mountrouidoux/cybersecurity-x-lab/"
+                                            target="_blank">Cybersecurity X Lab</a></p></font>
+        <font face="verdana" size="5"><p><a href="https://anderson-lab.github.io/" target="_blank">Data Science Research
+            Lab</a></p></font>
+        <font face="verdana" size="5"><p><a href="http://munsellb.people.cofc.edu/home.html" target="_blank">Machine
+            Learning and Medical Image Analysis Lab</a></p></font>
+        <font face="verdana" size="5"><p><a href="http://omics.cofc.edu/" target="_blank">Omics Data Science
+            Experience</a></p></font>
+        <font face="verdana" size="5"><p><a href="http://blogs.cofc.edu/sebastian/uav-robotics-lab/" target="_blank">UAV
+            Robotics Lab</a></p></font>
+        <font face="verdana" size="5"><p><a
+                href="https://blogs.cofc.edu/olmsteda/de/seta-lab-awarded-grant-to-research-and-develop-cloud-software/"
+                target="_blank">SDE Cyber-Security Lab</a></p></font>
+        <font face="verdana" size="5"><p><a href="http://blogs.cofc.edu/bareswh/virtual-production-lab/"
+                                            target="_blank">Virtual Production Lab</a></p></font></p>
+    </div>
+</div>
+</body>
 </html>
