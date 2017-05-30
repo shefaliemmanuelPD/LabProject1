@@ -3,16 +3,14 @@
                 {
                     "faculty": "Dr.Boring",
                     "title": "Cyber Infrastructure Research & Development Lab for the Earth Sciences",
-                    "description": "CIRDLES is an undergraduate computer science software engineering initiative at the The College of Charleston , Charleston, SC. We specialize in the collaborative development of free open
-    	                source software to support science domains. This material is based upon work supported by the National
-    	                Science Foundation under Grant Numbers 0930223 and 1443037."
+                    "description": "CIRDLES is an undergraduate computer science software engineering initiative at the The College of Charleston , Charleston, SC. We specialize in the collaborative development of free open source software to support science domains. This material is based upon work supported by the National Science Foundation under Grant Numbers 0930223 and 1443037."
                 },
                 {
                     "faculty" : "Dr.Manaris",
                     "title" : "Computer Music and Arts Lab",
                     "description": "Research projects span computer music, human-computer interaction and artificial intelligence.
-                        They explore interaction design and modeling of aesthetics and creativity using statistical, connectionist,
-                        and evolutionary techniques. They include systems for computer-aided analysis, composition, and performance
+                        they explore interaction design and modeling of aesthetics and creativity using statistical, connectionist,
+                        and evolutionary techniques. they include systems for computer-aided analysis, composition, and performance
                         in music and art, with an earlier emphasis in natural language."
                 },
                 {
@@ -56,28 +54,16 @@
                 {
                     "faculty" : "Dr.Van Delden",
                     "title" : "UAV Robotics Lab",
-                    "description": "The UAV Robotics Lab at the College of Charleston is located in Harbor Walk East, room 105C and features a variety of
-                        drone technology and opportunities for students to conduct research work in visual and voice guided robotics.  The lab contains DJI
-                        Phantom 4 drones, Arduino technologies, Raspberry Pis, wireless microphones, and other fun gadgets that are used to implement research ideas."
+                    "description": "The UAV Robotics Lab at the College of Charleston is located in Harbor Walk East, room 105C and features a variety of drone technology and opportunities for students to conduct research work in visual and voice guided robotics.  The lab contains DJI Phantom 4 drones, Arduino technologies, Raspberry Pis, wireless microphones, and other fun gadgets that are used to implement research ideas."
                 },
                 {
                     "faculty" : "Dr.Olmsted",
                     t"title" : "SDE Cyber-Security Lab",
-                    "description": "The Secure Data Engineering (SDE) Cyber Security Lab at the College of Charleston Computer Science Department has been
-                        award a grant to design and develop a new software solution whose function is to help in the dissemination of humanities data to
-                         groups and individual patrons. Individualized Humanities Collection and Dissemination System (IHCADS) is an open source cloud-based
-                         software solution designed to enhance public access to historical, archeological and artistic data and the experts who can help interpret
-                         the data. IHCADS will run in the cloud providing organizations with high-availability to their data and systems without the cost to the
-                         organization for the information technology professional and internal server infrastructure costs."
+                    "description": "The Secure Data Engineering (SDE) Cyber Security Lab at the College of Charleston Computer Science Department has been award a grant to design and develop a new software solution whose function is to help in the dissemination of humanities data to groups and individual patrons. Individualized Humanities Collection and Dissemination System (IHCADS) is an open source cloud-based software solution designed to enhance public access to historical, archeological and artistic data and the experts who can help interpret the data. IHCADS will run in the cloud providing organizations with high-availability to their data and systems without the cost to the organization for the information technology professional and internal server infrastructure costs."
                 },
                 {
                     "faculty" : "Dr.Bares",
                     "title" : "Virtual Production Lab",
-                    "description": "The Virtual Production Lab in the Department of Computer Science at the College of Charleston supports creative projects
-                        that involve technologies of the virtual production process including animation, green-screen virtual set filming, audio video recording
-                        and editing, performance capture, building character models and virtual sets, game development, computer graphics, visual simulations,
-                        and virtual 3D tours. The Department extends a special thank you to Optitrack for teaming with the department to provide motion-tracking
-                        equipment and software. We invite collaborations from CofC students and faculty as well as local filmmakers and performance artists who
-                        have an interest in exploring new forms of creative expression that blends the arts and technology."
+                    "description": "The Virtual Production Lab in the Department of Computer Science at the College of Charleston supports creative projects that involve technologies of the virtual production process including animation, green-screen virtual set filming, audio video recording and editing, performance capture, building character models and virtual sets, game development, computer graphics, visual simulations, and virtual 3D tours. The Department extends a special thank you to Optitrack for teaming with the department to provide motion-tracking equipment and software. We invite collaborations from CofC students and faculty as well as local filmmakers and performance artists who have an interest in exploring new forms of creative expression that blends the arts and technology."
                 }
                     ]}
