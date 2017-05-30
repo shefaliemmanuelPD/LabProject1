@@ -3,91 +3,27 @@
 <head>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
     <script src="script.js"></script>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-
 </head>
 <style>
-
-    body {margin:0;}
-
-    .topnav {
-      overflow: hidden;
-      background-color: #a3a3a3;
-    }
-
-    .topnav a {
-      float: left;
-      display: block;
-      color: #ffc0cb;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-      font-size: 17px;
-      font-family: "verdana"
-    }
-
-    .topnav a:hover {
-      background-color: #333;
-      color: black;
-    }
-
-    .topnav a.active {
-        background-color: #cecece;
-        color: white;
-    }
-    a:link {
-        color: purple;
-        background-color: transparent;
-        text-decoration: none;
-    }
-
-    a:visited {
-        color: pink;
-        background-color: transparent;
-        text-decoration: none;
-    }
-
-    a:hover {
-        color: magenta;
-        background-color: transparent;
-        text-decoration: underline;
-    }
-
-    a:active {
-        color: black;
-        background-color: transparent;
-        text-decoration: underline;
-    }
-    body{
-    background-image: url("YESSSS.jpg");
-    background-size: 100%;
-    height: 150px;
-    text-align:left}
-
-    ul{
-    color: white;}
-
+    <link rel="design" type="text/css" href="css/design.css" />
 
 </style>
 <body ng-controller="myController">
 <ul id="localStorage"></ul>
 
 <div>
-
     <div class="topnav text-right">
         <a href="index.html">Home</a>
         <a href="form.html">Form</a>
         <a href="advancedSearch.html">Advanced Search</a>
         <a href="about.html">About</a>
     </div>
-
     <div class="container">
         <h1 class=" page-header">
             <ul style="padding-left:16px">
@@ -122,31 +58,10 @@
                 target="_blank">SDE Cyber-Security Lab</a></p></font>
         <li><font face="verdana" size="5"><p><a href="http://blogs.cofc.edu/bareswh/virtual-production-lab/"
                                                 target="_blank">Virtual Production Lab</a></p></font></p></p>
-
     </div>
 </div>
 
-<script>
+<script language="JavaScript" src="js/script.js"> </script>
 
-            var xhttp = new XMLHttpRequest();
-            xhttp.onreadystatechange = function() {
-              if (this.readyState == 4 && this.status == 200) {
-                var response = JSON.parse(xhttp.responseText);
-                var localStorage = response.localStorage;
-
-                var output = '';
-                for ( var i = 0; i < localStorage.length; i++){
-                    output += '<li>'+localStorage[i].faculty+'</li>'
-                }
-                document.getElementById('localStorage').innerHTML = output;
-              }
-            };
-            xhttp.open("GET", "localStorage.json", true);
-            xhttp.send();
-
-
-</script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
 </body>
 </html>

@@ -17,3 +17,21 @@ myApp.controller("myController", function ($scope, $http){
         alert('didn\'t work');
     });
 });
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+              if (this.readyState == 4 && this.status == 200) {
+                var response = JSON.parse(xhttp.responseText);
+                var localStorage = response.localStorage;
+
+                var output = '';
+                for ( var i = 0; i < localStorage.length; i++){
+                    output += '<li>'+localStorage[i]'</li>'
+                }
+                document.getElementById('localStorage').innerHTML = output;
+              }
+            };
+            xhttp.open("GET", "localStorage.json", true);
+            xhttp.send();
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>

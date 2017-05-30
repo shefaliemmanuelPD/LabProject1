@@ -57,4 +57,62 @@
         background-color: #4CAF50;
         color: white;
     }
+        body {margin:0;}
+
+    .topnav {
+      overflow: hidden;
+      background-color: #a3a3a3;
+    }
+
+    .topnav a {
+      float: left;
+      display: block;
+      color: #ffc0cb;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+      font-family: "verdana"
+    }
+
+    .topnav a:hover {
+      background-color: #333;
+      color: black;
+    }
+
+    .topnav a.active {
+        background-color: #cecece;
+        color: white;
+    }
+    a:link {
+        color: purple;
+        background-color: transparent;
+        text-decoration: none;
+    }
+
+    a:visited {
+        color: pink;
+        background-color: transparent;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: magenta;
+        background-color: transparent;
+        text-decoration: underline;
+    }
+
+    a:active {
+        color: black;
+        background-color: transparent;
+        text-decoration: underline;
+    }
+    body{
+    background-image: url("YESSSS.jpg");
+    background-size: 100%;
+    height: 150px;
+    text-align:left}
+
+    ul{
+    color: white;}
 </style>
