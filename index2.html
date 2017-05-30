@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-    <html ng-app="myModule">
-        <head>
-            <meta charset="utf-8">
-            <title> JSON SandBox</title>
-        </head>
-        <body>
-            <ul id="localStorage"></ul>
-            <script>
+<html ng-app="myModule">
+<head>
+    <meta charset="utf-8">
+    <title> JSON SandBox</title>
+</head>
+<body>
+<ul id="localStorage"></ul>
+<script>
 
             var xhttp = new XMLHttpRequest();
             xhttp.onreadystatechange = function() {
@@ -23,7 +23,8 @@
             };
             xhttp.open("GET", "localStorage.json", true);
             xhttp.send();
-            </script>
 
-        </body>
-    </html>
+</script>
+
+</body>
+</html>
