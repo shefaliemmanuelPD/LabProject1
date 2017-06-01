@@ -66,13 +66,13 @@ it('should search in specific fields when filtering with a predicate object', fu
   var searchAny = element(by.model('search.$'));
   searchAny.clear();
   searchAny.sendKeys('i');
-  expectFriendNames(['Mary', 'Mike', 'Julie', 'Juliette'], 'friendObj');
+  expectFriendNames(['Sciences', 'Analysis', 'Experience', 'Learning','Robotics','Security', 'friend', 'Virtual'], 'friendObj');
 });
 it('should use a equal comparison when comparator is true', function() {
   var searchName = element(by.model('search.name'));
   var strict = element(by.model('strict'));
   searchName.clear();
-  searchName.sendKeys('Julie');
+  searchName.sendKeys('Sciences');
   strict.click();
-  expectFriendNames(['Julie'], 'friendObj');
+  expectFriendNames(['Sciences'], 'friendObj');
 });
