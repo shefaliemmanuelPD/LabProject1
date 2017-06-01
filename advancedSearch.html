@@ -3,54 +3,73 @@
 <head>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
     <script src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="advancedSearch.css">
+    <script language="JavaScript" src="js/advancedSearch.js"> </script>
+
 </head>
-<style>
- body {margin:0;}
 
-    .topnav {
-      overflow: hidden;
-      background-color: #a3a3a3;
-    }
-
-    .topnav a {
-      float: left;
-      display: block;
-      color: #ffc0cb;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-      font-size: 17px;
-      font-family: "verdana"
-    }
-
-    .topnav a:hover {
-      background-color: #333;
-      color: black;
-    }
-
-    .topnav a.active {
-        background-color: #cecece;
-        color: white;
-    }
-
-    body{
-    background-image: url("YESSSS.jpg");
-    background-size: 100%;
-    height: 150px;
-    text-align:left
-    font-size: 17px;
-    color: #ffc0cb;
-    font-family: "verdana"}
-
-
-</style>
 <body>
 <div class="topnav">
-    <a href="index.html">Home</a>
+    <a href="home.html">Home</a>
     <a href="form.html">Form</a>
     <a href="advancedSearch.html">Advanced Search</a>
     <a href="about.html">About</a>
 </div>
+
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search">
+
+<ul id="ul">
+
+  <li><a class="header">C</a></li>
+  <li><a href="http://cirdles.org/">Cyber Infrastructure Research and Development Lab for the Earth Sciences</a></li>
+  <li><a href="http://www.cs.cofc.edu/~manaris/?n=Main.ResearchProjects" target="_blank">Computer Music and Arts Lab</a></li>
+  <li><a href="http://blogs.cofc.edu/mountrouidoux/cybersecurity-x-lab/" target="_blank">Cybersecurity X Lab</a></li>
+
+  <li><a href="#" class="header">D</a></li>
+  <li><a href=href="https://anderson-lab.github.io/" target="_blank">Data Science Research Lab</a></li>
+
+  <li><a href="#" class="header">M</a></li>
+  <li><a href="http://munsellb.people.cofc.edu/home.html" target="_blank">Machine Learning and Medical Image Analysis Lab</a></li>
+
+   <li><a href="#" class="header">O</a></li>
+   <li><a href="http://omics.cofc.edu/" target="_blank">Omics Data Science Experience</a</li>
+
+   <li><a href="#" class="header">S</a></li>
+    <li><a href="https://blogs.cofc.edu/olmsteda/de/seta-lab-awarded-grant-to-research-and-develop-cloud-software/" target="_blank">SDE Cyber-Security Lab</a></li>
+
+   <li><a href="#" class="header">U</a></li>
+   <li><a href="http://blogs.cofc.edu/sebastian/uav-robotics-lab/" target="_blank">UAV Robotics Lab</a></li>
+
+   <li><a href="#" class="header">V</a></li>
+   <li><a href="http://blogs.cofc.edu/bareswh/virtual-production-lab/" target="_blank">Virtual Production Lab</a></li>
+
+</ul>
+
+
+<input type="text" ng-model="searchText"/>
+<ul>
+<li ng-repeat="item in items | filter: searchText">{{item.Virtual Production Lab}}</li>
+</ul>
+
+<div ng-init="friend = [{name:'Cyber Infrastructure Research and Development Lab for the Earth Sciences', html:'http://cirdles.org/'},
+                         {name:'Computer Music and Arts Lab', html:'http://www.cs.cofc.edu/~manaris/?n=Main.ResearchProjects'},
+                         {name:'Cybersecurity X Lab', html:'http://blogs.cofc.edu/mountrouidoux/cybersecurity-x-lab/'},
+                         {name:'Data Science Research Lab', html:'https://anderson-lab.github.io/'},
+                         {name:'Machine Learning and Medical Image Analysis Lab', html:'http://munsellb.people.cofc.edu/home.html'},
+                         {name:'Omics Data Science Experience', html:'http://omics.cofc.edu/'},
+                         {name:'SDE Cyber-Security Lab', html:'https://blogs.cofc.edu/olmsteda/de/seta-lab-awarded-grant-to-research-and-develop-cloud-software/'},
+                         {name:'UAV Robotics Lab', html:'http://blogs.cofc.edu/sebastian/uav-robotics-lab/'},
+                         {name:'Virtual Production Lab', html:'http://blogs.cofc.edu/bareswh/virtual-production-lab/'}
+                         ]"></div>
+
+<label>Search: <input ng-model="searchText"></label>
+<table id="searchTextResults">
+  <tr><th>Name</th><th>html</th></tr>
+  <tr ng-repeat="friend in friends | filter:searchText">
+    <td>{{friend.name}}</td>
+    <td>{{friend.html}}</td>
+  </tr>
+</table>
 
 </body>
 </html>

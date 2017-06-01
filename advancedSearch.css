@@ -1,0 +1,94 @@
+<style>
+    myInput {
+        background-image: url('YESSSS.jpg'); /* Add a search icon to input */
+        background-position: 10px 12px; /* Position the search icon */
+        background-repeat: no-repeat; /* Do not repeat the icon image */
+        width: 100%; /* Full-width */
+        font-size: 16px; /* Increase font-size */
+        padding: 12px 20px 12px 40px; /* Add some padding */
+        border: 1px solid #ddd; /* Add a grey border */
+        margin-bottom: 12px; /* Add some space below the input */
+    }
+
+    ul {
+        /* Remove default list styling */
+        list-style: none;
+        color: transparent;
+        padding: 20px;
+        margin: 0;
+    }
+
+    li a {
+        border: 1px solid #ffc0cb; /* Add a border to all links */
+        margin-top: -1px; /* Prevent double borders */
+        opacity:0.5;
+        background-color: #dfdfdf; /* Grey background color */
+        padding: 12px; /* Add some padding */
+        text-decoration: none; /* Remove default text underline */
+        font-size: 18px; /* Increase the font-size */
+        color: black; /* Add a black text color */
+        display: block; /* Make it into a block element to fill the whole list */
+    }
+
+    li a.header {
+        background-color: black; /* Add a darker background color for headers */
+        cursor: default; /* Change cursor style */
+        color: white;
+    }
+
+    li a:hover:not(.header) {
+        background-color: #e3e3e3; /* Add a hover effect to all links, except for headers */
+    }
+
+ body {margin:0;}
+
+    .topnav {
+      overflow: hidden;
+      background-color: #a3a3a3;
+    }
+
+    .topnav a {
+      float: left;
+      display: block;
+      color: #ffc0cb;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+      font-family: "verdana"
+    }
+
+    .topnav a:hover {
+      background-color: #333;
+      color: black;
+    }
+
+    .topnav a.active {
+        background-color: #cecece;
+        color: white;
+    }
+
+    body{
+    background-image: url("YESSSS.jpg");
+    background-size: 100%;
+    height: 150px;
+    text-align:left
+    font-size: 17px;
+    color: #ffc0cb;
+    font-family: "verdana"}
+
+    p{
+    text-align:left;
+    font-size: 17px;
+    font-family: "verdana";
+    left: 25px;
+    padding: 14px 10px;
+    }
+
+     small {
+        padding-top: 0px;
+        color:white;
+    }
+
+
+</style>
